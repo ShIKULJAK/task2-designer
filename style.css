@@ -1,0 +1,288 @@
+                    @import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+                     :root {
+                        --bodyFont: 'Pontano Sans', sans-serif;
+                        --transition: .3s ease;
+                        --gray: #333333;
+                        --darkgray: #2e2e2e;
+                        --yellow: #f3cd52;
+                        --lightgray: rgba(255, 255, 255, 0.4);
+                        --white: #fff;
+                        --font: 16px;
+                    }
+                    
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: var(--bodyFont);
+                        background: var(--gray);
+                        line-height: 1.7;
+                        font-size: var(--font);
+                    }
+                    
+                    h1 {
+                        color: var(--white);
+                        font-size: 1.7rem;
+                        letter-spacing: 3px;
+                        font-weight: bold;
+                    }
+                    
+                    .container {
+                        width: 80%;
+                        margin: auto;
+                    }
+                    
+                    .container::after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                    }
+                    /* ----HEADER---- */
+                    
+                    header {
+                        background-color: var(--yellow);
+                        text-align: center;
+                    }
+                    
+                    header h2 {
+                        padding-top: 30px;
+                        font-size: 1.7rem;
+                        letter-spacing: 2px;
+                    }
+                    
+                    header p {
+                        padding: 10px 0 40px 0;
+                        font-size: .6rem;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    
+                    header img {
+                        border-top: 30px solid rgba(255, 255, 255, 0.4);
+                        border-right: 30px solid rgba(255, 255, 255, 0.4);
+                        border-left: 30px solid rgba(255, 255, 255, 0.4);
+                    }
+                    /* ----NAV---- */
+                    
+                    nav {
+                        margin: 0 50px;
+                    }
+                    
+                    nav ul li {
+                        display: inline-block;
+                        padding: 20px;
+                        color: var(--gray);
+                        text-transform: uppercase;
+                        font-family: var(--bodyFont);
+                        font-size: .7rem;
+                        letter-spacing: 2px;
+                        font-weight: 900;
+                        text-decoration: none;
+                    }
+                    /* ----SERVICES---- */
+                    
+                    .services {
+                        padding: 50px 0;
+                        text-align: center;
+                    }
+                    
+                    .services article {
+                        width: 33%;
+                        float: left;
+                        padding: 0 20px 60px;
+                        border-bottom: 1px solid var(--lightgray);
+                    }
+                    
+                    .services article h3 {
+                        font-size: 1.5rem;
+                        padding-bottom: 20px;
+                        color: var(--white);
+                    }
+                    
+                    .services article p {
+                        font-size: .8rem;
+                        padding-bottom: 20px;
+                        color: var(--white);
+                    }
+                    
+                    .services button {
+                        background-color: var(--yellow);
+                        padding: 10px 20px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-size: .7rem;
+                        font-weight: bold;
+                    }
+                    /* ----PORTFOLIO---- */
+                    
+                    .portfolio {
+                        text-align: center;
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid var(--lightgray);
+                    }
+                    
+                    .portfolio img {
+                        width: 100%;
+                    }
+                    
+                    .portfolio div {
+                        width: 25%;
+                        float: left;
+                        padding: 30px;
+                    }
+                    
+                    .portfolio h5 {
+                        color: var(--white);
+                        font-size: .9rem;
+                    }
+                    
+                    .portfolio p {
+                        font-size: .8rem;
+                        padding-bottom: 20px;
+                        color: var(--white);
+                    }
+                    
+                    .portfolio button {
+                        background-color: var(--yellow);
+                        padding: 10px 20px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-size: .7rem;
+                        font-weight: bold;
+                    }
+                    /* ----CONTACT---- */
+                    
+                    .contact {
+                        text-align: center;
+                        padding: 50px 0;
+                    }
+                    
+                    .contact h2 {
+                        font-size: 3rem;
+                        color: var(--white);
+                        letter-spacing: 2px;
+                    }
+                    
+                    .contact p {
+                        color: var(--lightgray);
+                        padding: 20px;
+                    }
+                    
+                    .contact form {
+                        width: 40%;
+                        margin: auto;
+                    }
+                    
+                    .contact form input,
+                    .contact form textarea {
+                        display: block;
+                        width: 100%;
+                        margin: 15px 0;
+                        background: var(--darkgray);
+                        border: none;
+                        padding: 20px;
+                        font-size: 1, 2rem;
+                        font-family: var(--bodyFont);
+                        color: var(--lightgray);
+                    }
+                    
+                    .contact button {
+                        background-color: var(--yellow);
+                        padding: 10px 20px;
+                        border: none;
+                        text-transform: uppercase;
+                        font-size: .7rem;
+                        font-weight: bold;
+                    }
+                    /* ----FOOTER---- */
+                    
+                    footer {
+                        text-align: center;
+                        margin: 50px;
+                    }
+                    
+                    footer i {
+                        margin: 30px 20px;
+                        padding: 10px;
+                        color: var(--gray);
+                        background-color: var(--yellow);
+                    }
+                    
+                    footer p {
+                        color: var(--lightgray);
+                    }
+                    
+                    hr {
+                        border-bottom-style: 1px solid var(--lightgray);
+                        margin-bottom: 30px;
+                    }
+                    /* ----RESPONSIVE---- */
+                    
+                    @media(min-width:768px) and (max-width:1024px) {
+                        .portfolio div {
+                            width: 50%;
+                        }
+                    }
+                    
+                    @media (max-width:768px) {
+                        header {
+                            padding-top: 30px;
+                        }
+                        .container {
+                            width: 90%;
+                        }
+                        .main-nav ul li {
+                            margin: 5px;
+                            padding: 0;
+                        }
+                        header img {
+                            border-top: 15px solid rgba(255, 255, 255, 0.4);
+                            border-right: 15px solid rgba(255, 255, 255, 0.4);
+                            border-left: 15px solid rgba(255, 255, 255, 0.4);
+                        }
+                        /* ----SERVICES---- */
+                        .services {
+                            padding: 5px 0;
+                            text-align: center;
+                        }
+                        .services article {
+                            width: 100%;
+                            border-bottom: none;
+                        }
+                        /* ----PORTFOLIO---- */
+                        .portfolio {
+                            text-align: center;
+                            padding-top: 40px;
+                            padding-bottom: 30px;
+                            margin: 0 40px;
+                            border-top: 1px solid var(--lightgray);
+                        }
+                        .portfolio div {
+                            width: 100%;
+                            padding: 30px 0;
+                        }
+                        .portfolio h5 {
+                            color: var(--white);
+                            font-size: .9rem;
+                        }
+                        /* ----CONTACT---- */
+                        .contact {
+                            text-align: center;
+                            padding: 40px 0;
+                        }
+                        .contact form {
+                            width: 80%;
+                            margin: auto;
+                        }
+                        /* ----FOOTER---- */
+                        footer i {
+                            margin: 30px 11px;
+                            padding: 20px;
+                            color: var(--gray);
+                            background-color: var(--yellow);
+                        }
+                    }
